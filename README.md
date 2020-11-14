@@ -2,13 +2,12 @@
 
 This repository contains the code to train a model with the Proportional Progressive Pseudo Labeling (PPPL) technique as described in our paper.
 
-The CICIDS2017 dataset we used here is built from the pcap files provided at https://www.unb.ca/cic/datasets/ids-2017.html.
 Before running the code for CICIDS2017, the dataset should be first extracted.
 ```
 ./extract_packet_data.sh
 ```
 
-For more details about how to run the code for each dataset please look at its own README file.
+For more details about the code for each dataset please look at its own README file.
 
 ## Paper
 
@@ -25,3 +24,5 @@ Domain adaptation helps transfer the knowledge gained from a labeled source doma
   year={2020}
 }
 ```
+
+Questions? Please, email mohammad.hashemi@colorado.edu.
