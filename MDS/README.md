@@ -1,6 +1,7 @@
 # PPPL on the MDS dataset
-MDS_PPPL.ipynb contains the code to train PPPL on the MDS dataset. 
+MDS_PPPL.ipynb contains the code to train a model on the MDS dataset with the help of the PPPL technique. 
 This code is developed using PyTorch. 
+
 The MDS dataset contains 27,677 product reviews from amazon.com about four product domains: books (B), dvds (D), electronics (E) and kitchen appliances (K). 
 The goal is to classify the reviews into positive and negative classes. 
 For each domain, 2,000 reviews are named labeled and around 4,000 (4,465 for books, 3,586 for dvds, 5,681 for electronics and 5,945 for kitchen appliances) 
