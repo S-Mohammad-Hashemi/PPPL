@@ -1,4 +1,0 @@
-Dependencies:
-python 3.7
-pytorch (version 1.5.0)
-torchvision (version 0.6.0)
