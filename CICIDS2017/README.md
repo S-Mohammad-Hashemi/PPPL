@@ -1,15 +1,15 @@
 # PPPL on the CICIDS2017 dataset
 
-CICIDS_PPPL.ipynb contains the code to train a model on the CICIDS2017 dataset with the help of PPPL technique.
+CICIDS_PPPL.ipynb contains the code to train a model on the CICIDS2017 dataset with the help of the PPPL technique.
 This code is developed using TensorFlow.
 
 For more details on how this dataset is created and preprocessed, please look at [this paper](https://arxiv.org/abs/2008.03677).
 
-Since this dataset is imbalanced, at the initial phase of the training, when we trian the model on the source samples, we first downsampled the benign inputs
+Since this dataset is imbalanced, at the initial phase of the training, when we train the model on the source samples, we first downsampled the benign inputs
 to become the same size as malicious inputs and then trained the model on them. 
-During the first 30 iterations of PPPL we balanced benign and malicious inputs by downsampling benign inputs, as well.
+During the first 30 iterations of PPPL, we balanced benign and malicious inputs by downsampling benign inputs, as well.
 In addition during the first 30 iterations of PPPL, instead of excluding samples of the class which is predicted more than its expected class proportion
-since there are only two classes, we changed their pseudo-labels to the opposite class and keep them into the training set. 
+since there are only two classes, we changed their pseudo-labels to the opposite class and keep them in the training set. 
 We do these two techniques because of the imbalanced domains that we have in this dataset to force the model to predict malicious inputs more often 
 and increase the chance of correct predictions of malicious inputs.
 
